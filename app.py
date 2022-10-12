@@ -44,7 +44,7 @@ def home():
         subject = request.form['subject']
         messsage = request.form['message']
         
-        msg = Message(subject,sender="onetshim021@student.wethinkcode.co.za",recipients=["ofhaninetshi12@gmail.com"])
+        msg = Message(subject,sender=email,recipients=["ofhaninetshi12@gmail.com"])
          
         msg.body = messsage
         mail.send(msg)
