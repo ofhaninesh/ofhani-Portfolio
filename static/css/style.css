@@ -17,6 +17,8 @@
 	--h1-font: 5.2rem;
 	--h2-font: 3.5rem;
 	--p-font: 1.1rem;
+	--green: #72b626;
+	--nero: #252525;
 }
 body{
 	background: var(--bg-color);
@@ -461,3 +463,214 @@ form textarea{
       top: -360px;
     }
 }
+.resume{
+    padding: 5rem 0 2.5rem 0;
+}
+.resume > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.resume .item{
+    padding: 0 2.5rem;
+    margin: 2rem;
+    border-left: 1px solid var(--nero);
+    position: relative;
+}
+.resume .item > span{
+    background: var(--nero);
+    border-radius: 15px;
+    padding: 0.25rem 0.7rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.resume .item h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.resume .item h2 span{
+    font-size: 1rem;
+    color: #d0d0d0;
+}
+.resume .item .text{
+    font-size: 1rem;
+    padding-bottom: 0;
+}
+.resume .icon{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -25px;
+}
+
+/* #### SERVICES PAGE #### */
+
+/* #### SKILLS PAGE #### */
+.skills{
+    padding: 5rem 0 2.5rem 0;
+}
+.skills > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+.skills .item-text span:last-child{
+    position: absolute;
+}
+.skills .item-text .w-90{
+    margin-left: 85%;
+}
+.skills .item-text .w-75{
+    margin-left: 70%;
+}
+.skills .item-text .w-85{
+    margin-left: 80%;
+}
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+.skills .item-text .w-60{
+    margin-left: 55%;
+}
+.skills .item-text .w-68{
+    margin-left: 63%;
+}
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--nero);
+    overflow: hidden;
+}
+.progress-bar{
+    background: var(--green);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-75{
+    width: 75%;
+}
+.progress-bar.w-85{
+    width: 85%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+.progress-bar.w-68{
+    width: 68%;
+}
+
+/* #### PROJECTS PAGE #### */
+/* #### Media Queries #### */
+
+
+@media screen and (min-width: 768px){
+    /* footer */
+    /* resume page */
+    .resume .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* services page */
+    /* skills page */
+    .skills .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    /* projects page */
+    
+}
+
+.text{
+    font-size: 1.05rem;
+    color: #d0d0d0;
+    line-height: 1.7;
+}
+
+/* title */
+.title{
+    position: relative;
+}
+.title > h2{
+    font-size: 3rem;
+    font-family: var(--poppins);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--nero);
+}
+.title div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.title div h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: var(--poppins);
+    font-weight: 800;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 500px){
+    .title > h2{
+        font-size: 6rem;
+    }
+    .title div h2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        width: 88vw;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 85vw;
+    }
+}
+
+/* animation and transition stopper styling */
+/* .resize-animation-stopper *{
+    animation: none !important;
+    transition: none !important;
+} */
