@@ -383,6 +383,8 @@ form textarea{
 	}
 }
 
+
+
 @media (max-width: 970px){
 	:root{
 		--h1-font: 4.2rem;
@@ -458,6 +460,7 @@ form textarea{
     top: -10px;
     animation: slide 12s steps(4) infinite;
 }
+
 @keyframes slide {
     100%{
       top: -360px;
@@ -668,9 +671,39 @@ form textarea{
         width: 85vw;
     }
 }
+@media screen and (min-width: 100px){
+	.home-text h1{
+        font-size: 2.8rem;
+    }
 
-/* animation and transition stopper styling */
-/* .resize-animation-stopper *{
+}
+@media screen and (max-width: 100px){
+	#videoeditor{
+		font-size: -30.9rem;
+		font-weight: 500;
+		position: relative;
+		
+		
+		
+    }
+	#videoeditor li{
+		top: 0px;
+	}
+
+}
+@media screen and (min-width: 100px){
+	#videoeditors{
+        font-size: 2.5rem;
+		font-weight: 500;
+		position: relative;
+		top: -4px;
+		
+		
+    }
+
+}
+animation and transition stopper styling
+.resize-animation-stopper *{
     animation: none !important;
     transition: none !important;
-} */
+}
